@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning table</title>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        caption-side: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <th>A</th>
+        <th colspan="3">B</th>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+        <td>J</td>
+      </tr>
+      <tr>
+        <td colspan="2" rowspan="2">K</td>
+        <td>L</td>
+        <td>M</td>
+      </tr>
+      <tr>
+        <td>N</td>
+        <td>O</td>
+      </tr>
+      <tr>
+        <td>P</td>
+        <td>Q</td>
+        <td>R</td>
+        <td>S</td>
+      </tr>
+    </table>
+    <br /><br />
+    <table>
+      <caption>
+        Learning colsgroup
+      </caption>
+      <colgroup>
+        <col span="3" style="background-color: greenyellow" />
+        <col span="2" style="background-color: red" />
+      </colgroup>
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+        <td>J</td>
+      </tr>
+      <tr>
+        <td>K</td>
+        <td>L</td>
+        <td>M</td>
+        <td>N</td>
+        <td>O</td>
+      </tr>
+    </table>
+    <br /><br />
+    <table style="width: 100%">
+      <caption>
+        Learning colsgroup
+      </caption>
+      <colgroup>
+        <col span="1" style="background-color: greenyellow" />
+        <col span="1" style="background-color: red" />
+        <col span="1" style="background-color: aqua" />
+        <col span="1" style="background-color: violet" />
+        <col span="1" style="visibility: collapse" />
+      </colgroup>
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>F</td>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+        <td>J</td>
+      </tr>
+      <tr>
+        <td>K</td>
+        <td>L</td>
+        <td>M</td>
+        <td>N</td>
+        <td>O</td>
+      </tr>
+    </table>
+    <br /><br />
+    <table>
+        <colgroup>
+        <col span="1">
+        <col span="1" style="background-color: rgb(0, 109, 128);">
+        <col span="1" style="background-color: red;">
+        <col span="1">
+        </colgroup>
+      <tr>
+        <td rowspan="2">State of Health</td>
+        <td colspan="2">Fasting value</td>
+        <td>After Eating</td>
+        
+      </tr>
+      <tr>
+        <td>minimum</td>
+        <td>maximum</td>
+        <td>2 hr after eating</td>
+        
+      </tr>
+      <tr>
+        <td>healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>less than 140</td>
+      </tr>
+      <tr>
+        <td>Pre-diab</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+      </tr>
+      <tr>
+        <td>Diabetes</td>
+        <td>More than 126</td>
+        <td>NA</td>
+        <td>More than 200</td>
+      </tr>
+    </table>
+
+    <br><br>
+    <h2>The speed of car is : 10&nbsp;km/hr</h2>
+    <h5>The site is &copy; and &reg;</h5>
+  </body>
+</html>
