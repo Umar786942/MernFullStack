@@ -1,0 +1,110 @@
+#external {
+  font-style: oblique;
+  background-color: aqua;
+  color: brown;
+}
+.linear {
+  width: 300px;
+  height: 300px;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  background-image: linear-gradient(red, green, blue);
+  background-image: linear-gradient(to right, red, blue);
+  background-image: linear-gradient(to bottom right, red, blue, green);
+  background-image: linear-gradient(210deg, red, green);
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 0, 0, 0),
+    rgba(0, 0, 255, 1)
+  );
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}
+.radial {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 10px;
+  background-image: radial-gradient(red, green);
+  background-image: radial-gradient(red, green, blue);
+  background-image: radial-gradient(circle, red, green, blue);
+  background-image: radial-gradient(red 5%, green 5%, orange 50%);
+}
+.conical {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  background-image: conic-gradient(
+    red,
+    green,
+    blue
+  ); /*equally distribution as position is centre and angle is 0 deg*/
+  background-image: conic-gradient(yellow 10%, aqua 20%, orange 50%);
+  background-image: conic-gradient(from 90deg, orange, green, white);
+  background-image: conic-gradient(at 60% 45%, red, green, white);
+  background-image: repeating-conic-gradient(orange 10%, blue 20%);
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(
+    orange 0deg 10deg,
+    white 10deg 20deg,
+    green 20deg 30deg
+  );
+}
+.text {
+  font-size: larger;
+  text-shadow: 3px 3px 3px red, 10px 10px 10px blueviolet;
+}
+.box {
+  margin: 10px;
+  font-size: x-large;
+  width: 500px;
+  height: 500px;
+  color: brown;
+  background-color: aqua;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1),
+    20px 20px 20px rgba(191, 211, 13, 0.493);
+  border-radius: 5%;
+}
+h1 {
+  color: orangered;
+  text-shadow: -1px 0 black, 1px 0 black, 0 -1px black, 0 1px black;
+}
+.spread {
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  background-color: cadetblue;
+  box-shadow: 10px 10px 10px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+}
+.nohw {
+  border: 1px solid black;
+  overflow: scroll;
+}
+.hw1 {
+  border: 1px solid black;
+  margin: 10px;
+  height: 100px;
+  overflow: scroll;
+}
+.hw2 {
+  border: 1px solid black;
+  margin: 10px;
+  width: 100px;
+  overflow: scroll;
+}
+.hw3 {
+  border: 1px solid black;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  overflow: scroll;
+}
+.hw4 {
+  border: 1px solid black;
+  margin: 10px;
+  overflow: scroll;
+
+  max-height: 400px;
+}
+

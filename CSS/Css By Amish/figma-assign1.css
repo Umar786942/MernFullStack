@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  position: relative;
+}
+.logo1 {
+}
+.navigation {
+}
+.button {
+}
+
+.nav-text {
+}

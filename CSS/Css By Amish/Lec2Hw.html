@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lec2Hw</title>
+    <style>
+      #hw {
+        height: 250px;
+        width: 350px;
+        position: relative;
+        background-color: crimson;
+        color: white;
+        font-weight: bolder;
+        font-size: larger;
+      }
+      /* p {
+        display: inline;
+      }
+      #one {
+      }
+      #two {
+        position: relative;
+        left: 318px;
+      }
+      #three {
+        position: relative;
+        top: 230px;
+        right: 35px;
+      }
+      #four {
+        position: relative;
+        top: 230px;
+        left:280px
+      }*/
+      #one,
+      #two,
+      #three,
+      #four {
+        position: absolute;
+      }
+      #two {
+        bottom: 0;
+      }
+      #three{
+        bottom: 0;
+        right: 0;
+      }
+      #four{
+        top: 0;
+        right: 0;
+      }
+      #five{
+        top: 50%;
+        left: 50%;
+        transform: translate(50%,50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hw">
+      <p id="one">A</p>
+      <p id="two">B</p>
+      <p id="three">C</p>
+      <p id="four">D</p>
+      <p id="five">E</p>
+    </div>
+  </body>
+</html>

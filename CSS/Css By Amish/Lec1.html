@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="External.css" />
+    <title>Css-Class1</title>
+
+    <style>
+      h1 {
+        font-family: cursive;
+      }
+      #divhover {
+        background-color: cadetblue;
+        display: none;
+        padding: 20px;
+      }
+      .he1 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .he2 {
+        background-color: crimson;
+      }
+      #p1 {
+        background-color: burlywood;
+      }
+      #p2 {
+        background-color: brown;
+      }
+      a:hover {
+        color: black;
+      }
+      #but:hover {
+        color: crimson;
+      }
+      .res:hover {
+        color: chocolate;
+      }
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      div:hover #divhover {
+        display: block;
+      }
+      #internal-id{
+         background-color: cornflowerblue;
+      }
+      .internal-class{
+background-color: darkgoldenrod;
+      }
+      p{
+background-color: indigo;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Element/type/tag Delector -->
+    <h1>This is my top heading</h1>
+    <p>This is my first paragraph</p>
+    <!-- class Selector -->
+    <h1 class="he1">First heading</h1>
+    <h2 class="he1">This is second heading</h2>
+    <h3 class="he1">this is third heading</h3>
+    <h4 class="he2">Fourth heading</h4>
+    <h5 class="he2">5th heading</h5>
+    <h6 class="he2">Sixth heading</h6>
+    <!-- Id Selector -->
+    <p id="p1">This is second paragraph</p>
+    <p id="p2">This is third paragraph</p>
+    <!-- Pseudo class selector -->
+    <a href="https:www.google.com">Click Me</a><br /><br />
+    <button type="submit" id="but">Submit</button><br /><br />
+    <button type="reset" class="res">Reset</button>
+    <!-- Multiple Selector -->
+    <table>
+      <tr>
+        <th>Month</th>
+        <th colspan="2">Savings</th>
+      </tr>
+      <tr>
+        <td>Jan</td>
+        <td>100</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Feb</td>
+        <td>20</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Total</td>
+        <td rowspan="3">120</td>
+        <td rowspan="3">50</td>
+      </tr>
+    </table>
+    <br />
+    <!-- Hover over div to display p element as a tooltip -->
+    <div>
+      Hover over div to display p element
+      <p id="divhover">Tada!!!I am Here</p>
+    </div>
+    <!-- Examples of internal Css already used above -->
+    <!-- Inline Css -->
+    <p style="background-color: chartreuse">I have been styled by inline Css</p>
+    <br /><br />
+    <!-- External Css -->
+    <p id="external">I have been designed by External Css</p>
+    <!-- Specificity- Inline>id>class>tag>universal -->
+    <p style="background-color: darkgreen" id="internal-id" class="internal-class">Inline>id>class>tag</p>
+  </body>
+</html>

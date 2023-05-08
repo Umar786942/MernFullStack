@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+   <style>
+    div {
+        width: 80px;
+        height: 80px;
+        background-color: skyblue;
+      }
+      
+      .perspective {
+        /* Includes a perspective to create a 3D space */
+        transform: perspective(500px) translateZ(-100px);
+        background-color: limegreen;
+      }
+      
+      .scaled-translated {
+        /* Includes a perspective to create a 3D space */
+        border:1px solid black;
+        margin-left:200px;
+        transform: perspective(400px) scaleZ(6) rotateX(45deg) rotateY(45deg) ;
+        background-color: pink;
+      }
+      #black{
+        width: 80px;
+        height: 80px;
+        border: 1px solod black;
+        background-color: orange;
+        margin: 10px;
+      }
+      .translated{
+        transform: perspective(15px) translateZ(-10px);
+      }
+      
+      .scaled{
+        margin-left:200px;
+        transform:rotateZ(30deg);
+        /* transform: perspective(350px) scaleZ(6) rotateX(45deg) rotateY(30deg); */
+      }
+      
+   </style>
+</head>
+<body>
+
+    <div>Normal</div>
+    <div id="black"> <div class="perspective">Translated</div></div>
+   
+    <div class="scaled-translated">Scaled</div><br>
+    <div class="static">static</div><br>
+    <div class="translated">translated</div><br>
+    <div class="scaled">scaled</div>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoxModel</title>
+    <style>
+      .box {
+        padding: 25px;
+        border: 1px solid black;
+        margin: 10px;
+        width: 200px;
+        height: 100px;
+        background-color: yellowgreen;
+        box-sizing: border-box;
+      }
+      .org {
+        background-color: orange;
+        width: 200px;
+        height: 100px;
+        font-family: "Brush Script MT";
+        font-weight: bold;
+      }
+      .white {
+        background-color: white;
+        width: 200px;
+        height: 100px;
+        font-family: "Lucida Handwriting";
+        font-weight:900
+      }
+      .green {
+        background-color: green;
+        width: 200px;
+        height: 100px;
+        font-family:"papyrus";
+      }
+      @font-face {
+        font-family: myFirstFont;
+        src: url(/SansationLight/SansationLight.woff);
+      }
+      #external{
+        font-family: myFirstFont;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is first div container</div>
+    <div class="box">This is second div container</div>
+    <div class="box">This is third div container</div>
+    <div class="org">Hexadecimal color</div>
+    <div class="white">RGB Color</div>
+    <div class="green">Predefined/Cross browser color name</div><br>
+    <!-- How to add external fonts -->
+    <div id="external">
+      <p>With CSS, websites can use fonts other than the pre-selected "web-safe" fonts.</p>
+    </div>
+  </body>
+</html>
