@@ -1,0 +1,66 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color:white;
+    --main-size:100px;
+    --main-weight:bolder;
+    }
+.container{
+    height: 100vh;
+    --aqua-color:aquamarine;
+    background-color: var(--aqua-color,blue);
+    overflow-y: auto;
+}
+.box{
+    border: 1px solid black;
+    background-color: yellow;
+    /* width: calc(100% - 500px); */
+    /* width: max(50%,500px); */
+    width: min(50%,500px);
+    color:var(--main-color);
+    font-size: var(--main-size);
+    font-weight: var(--main-weight);
+}
+a:after{
+    content: "("attr(href)")";
+}
+body{
+    counter-reset: section 0;
+}
+h1::before{
+    content:"Section " counter(section,upper-roman) " : ";
+    counter-increment: section 1;
+    color: red;
+    background-color: antiquewhite;
+}
+h1{
+    counter-reset:subsection 0;
+    
+}
+h2::before{
+    content: counter(section)"." counter(subsection);
+    counter-increment: subsection 1;
+    color:burlywood;
+
+}
+.transition-box{
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    transition: width 2s, height 5s,transform 4s;
+}
+.transition-box:hover{
+    height: 20rem;
+    width: 20rem;
+    transform: translateX(20rem) rotate(180deg);
+    transition-timing-function: ease-in;
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function:linear ; */
+    transition-delay: 2s;
+    
+}

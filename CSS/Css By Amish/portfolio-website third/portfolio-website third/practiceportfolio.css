@@ -1,0 +1,689 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  position: relative;
+}
+.logocontainer {
+  display: flex;
+  align-items: center;
+}
+
+.logocontainer img {
+  width: 20%;
+}
+.logocontainer h2 {
+  margin: -1.3rem;
+  font-family: serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.navitemscontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.navitemscontainer a {
+  color: rgba(0, 0, 0, 0.651);
+  text-decoration: none;
+  margin-right: 1rem;
+  font-family: serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  transition: all 0.8s;
+}
+.navitemscontainer a:hover {
+  color: rgb(0, 0, 0);
+}
+.heroSection {
+  display: flex;
+  margin-top: 4rem;
+  align-items: center;
+  gap: 5rem;
+  margin: 4rem 0;
+  padding: 0 1rem 8rem;
+}
+.heroSectionLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.heading {
+  font-family: serif;
+  font-size: 3rem;
+  color: rgba(49, 43, 43, 0.678);
+}
+.subheading {
+  font-family: serif;
+  font-size: 3rem;
+  color: rgba(49, 43, 43, 0.877);
+}
+.role {
+  font-weight: bold;
+  color: rgb(82, 82, 175);
+}
+.heroSectionLeft p {
+  width: 80%;
+  font-family: serif;
+  font-weight: lighter;
+  font-size: 1.4rem;
+}
+.btnPink {
+  position: relative;
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  background-color: rgba(219, 34, 21, 0.849);
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+  box-shadow: 4px 4px 5px rgba(49, 43, 43, 0.678);
+  z-index: 1;
+  border: none;
+  transition: all 1s;
+}
+.btnPink::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  z-index: -1;
+  transform-origin: left;
+  transition: all 1s;
+}
+.btnPink:hover::before {
+  transform: scaleX(1);
+}
+.btnPink:hover {
+  color: black;
+  border: 1px solid rgba(219, 34, 21, 0.849);
+}
+.heroSectionRight {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.userImage {
+  padding: 2.5rem;
+  animation: image 6s linear infinite;
+  z-index: -9;
+}
+@keyframes image {
+  0% {
+    filter: grayscale(0);
+  }
+  50% {
+    filter: grayscale(1);
+    transform: scale(1.2);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.651);
+  }
+  100% {
+    filter: grayscale(0);
+  }
+}
+.cube {
+  top: -5%;
+  left: 85%;
+  animation: cubemove 3s ease-in infinite;
+  z-index: 9;
+}
+@keyframes cubemove {
+  0% {
+    transform: rotateY(0deg) translateY(0%);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(-20%);
+  }
+  100% {
+    transform: rotateY(360deg) translateY(0%);
+  }
+}
+.circle {
+  top: 95%;
+  left: 1%;
+  z-index: 9;
+  animation: circlemove 5s ease infinite;
+}
+@keyframes circlemove {
+  50% {
+    bottom: 40%;
+    left: 3%;
+  }
+}
+.dots {
+  left: 70%;
+  bottom: -2%;
+  z-index: 9;
+  animation: dotmove 4s linear infinite;
+}
+@keyframes dotmove {
+  50% {
+    transform: translateY(40%);
+  }
+}
+
+.plus {
+  left: 50%;
+  top: -3%;
+  z-index: 9;
+  animation: plusmove 3s ease-in infinite;
+}
+@keyframes plusmove {
+  50% {
+    transform: translateY(-70%);
+  }
+}
+.zigzags {
+  z-index: 9;
+  top: 3%;
+  animation: zigzagmove 5s ease-in infinite;
+}
+@keyframes zigzagmove {
+  50% {
+    transform: translateX(40%);
+  }
+}
+.fadedText {
+  color: rgba(128, 128, 128, 0.288);
+  user-select: none;
+  font-size: 7rem;
+  letter-spacing: 0.5rem;
+  position: absolute;
+  top: 95%;
+  left: -5%;
+}
+.projectContainer {
+  background-color: rgba(128, 128, 128, 0.288);
+ 
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.projectContainer h1 {
+  text-align: center;
+  padding: 2.5rem 0;
+  color: rgba(219, 34, 21, 0.849);
+  font-size: 5rem;
+}
+.project1 {
+  background-image: url(./images/projects/Project1.png);
+  box-shadow: 0px 0px 40px #1f1f1f;
+  width: 90%;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  position: relative;
+}
+.project2 {
+  box-shadow: 0px 0px 40px #1f1f1f;
+  width: 90%;
+  height: 550px;
+  margin-left: 10%;
+  z-index: 0;
+  position: relative;
+}
+.project3 {
+  box-shadow: 0px 0px 40px #1f1f1f;
+  width: 90%;
+  height: 550px;
+  z-index: 0;
+  position: relative;
+}
+.project4 {
+  box-shadow: 0px 0px 40px #1f1f1f;
+  width: 90%;
+  height: 550px;
+  margin-left: 10%;
+  z-index: 0;
+  position: relative;
+  margin-bottom: 3rem;
+}
+.projects div img {
+  width: 100%;
+  height: 550px;
+}
+.techstackContainer {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  /* justify-content: space-between; */
+  gap: 1rem;
+  left: 10%;
+  top: 10%;
+  transition: all 0.5s;
+}
+.project1::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(41, 38, 38, 0.986);
+  z-index: 1;
+  position: absolute;
+  opacity: 0.5;
+  transform-origin: left;
+}
+.project1::after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(112, 112, 173);
+  z-index: 1;
+  opacity: 0.5;
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+.project1:hover::after {
+  transform: scaleX(1);
+}
+.project1:hover .techstackContainer {
+  transform: scale(1.2);
+}
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 90%;
+  height: 28%;
+}
+.techStack img {
+  max-height: 40px;
+  max-width: 40px;
+}
+.projectSkill {
+  width: 100%;
+  height: 20%;
+}
+.projectHeading {
+  color: white;
+}
+.projectDescription {
+  color: white;
+}
+.projectHeading {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.projectDescription {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.projectNumber {
+  font-size: 12rem;
+  color: white;
+  font-weight: 1200px;
+  font-family: sans-serif;
+  position: absolute;
+  left: 85%;
+  top: -6%;
+  opacity: 0;
+  z-index: 10;
+}
+.project1:hover .projectNumber {
+  opacity: 1;
+}
+.readMore {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.readMore a {
+  color: white;
+}
+.icon {
+  cursor: pointer;
+  color: white;
+  font-size: 2.2rem;
+  transition: all 0.4s;
+}
+.icon:hover {
+  color: rgba(219, 34, 21, 0.849);
+}
+
+/* Project no 2 */
+
+.techstackContainer2 {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  left: 40%;
+  top: 10%;
+  transition: all 0.5s;
+}
+.project2::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(41, 38, 38, 0.986);
+  z-index: 1;
+  position: absolute;
+  opacity: 0.5;
+  transform-origin: left;
+}
+.project2::after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(112, 112, 173);
+  z-index: 1;
+  opacity: 0.5;
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+.project2:hover::after {
+  transform: scaleX(1);
+}
+.project2:hover .techstackContainer2 {
+  transform: scale(1.2);
+}
+
+.projectNumber2 {
+  font-size: 12rem;
+  color: white;
+  font-weight: 1200px;
+  font-family: sans-serif;
+  position: absolute;
+  left: -4%;
+  top: -7%;
+  opacity: 0;
+  z-index: 10;
+}
+.project2:hover .projectNumber2 {
+  opacity: 1;
+}
+
+/* Project 3 */
+
+.techstackContainer3 {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  left: 10%;
+  top: 10%;
+  transition: all 0.5s;
+}
+.project3::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(41, 38, 38, 0.986);
+  z-index: 1;
+  position: absolute;
+  opacity: 0.5;
+  transform-origin: left;
+}
+.project3::after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(112, 112, 173);
+  z-index: 1;
+  opacity: 0.5;
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+.project3:hover::after {
+  transform: scaleX(1);
+}
+.project3:hover .techstackContainer3 {
+  transform: scale(1.2);
+}
+
+.projectNumber3 {
+  font-size: 12rem;
+  color: white;
+  font-weight: 1200px;
+  font-family: sans-serif;
+  position: absolute;
+  left: 85%;
+  top: -6%;
+  opacity: 0;
+  z-index: 10;
+
+}
+.project3:hover .projectNumber3 {
+  opacity: 1;
+}
+
+/* Project 04 */
+
+.techstackContainer4 {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  left: 40%;
+  top: 10%;
+  transition: all 0.5s;
+}
+.project4::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(41, 38, 38, 0.986);
+  z-index: 1;
+  position: absolute;
+  opacity: 0.5;
+  transform-origin: left;
+}
+.project4::after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(112, 112, 173);
+  z-index: 1;
+  opacity: 0.5;
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+.project4:hover::after {
+  transform: scaleX(1);
+}
+.project4:hover .techstackContainer4 {
+  transform: scale(1.2);
+}
+
+.projectNumber4 {
+  font-size: 12rem;
+  color: white;
+  font-weight: 1200px;
+  font-family: sans-serif;
+  position: absolute;
+  left: -4%;
+  top: -7%;
+  opacity: 0;
+  z-index: 10;
+  
+}
+.project4:hover .projectNumber4 {
+  opacity: 1;
+}
+
+
+.myTechStackContainer{
+  width: 1200px;
+  padding:5rem;
+  margin:10rem auto;
+  background-color: white;
+  display: flex;
+  /* align-items: center; */
+  gap: 3rem;
+  border: 1px solid black;
+}
+.techStackDescription{
+  width: 50%;
+  /* padding: 3rem 3rem 3rem 0;
+  margin:4rem 0; */
+}
+.techStackImages{
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  z-index: 1;
+  /* padding: 3rem; */
+}
+.techStackDescription h1{
+  font-size: 4rem;
+  color:rgba(219, 34, 21, 0.849) ;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.techStackDescription p{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(129, 114, 114);
+  /* width: 50%; */
+}
+
+.blobImage{
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  z-index: -2;
+  animation: blobMovement 3s linear infinite;
+}
+@keyframes blobMovement {
+  50%{
+    left: 15%;
+  top: 15%;
+  }
+}
+.skills-logo{
+width: 90px;
+height: 90px;
+transition: all 0.5s;
+}
+.skills-logo:hover{
+  transform: scale(1.3);
+}
+.fadedText2{
+  color: rgba(128, 128, 128, 0.288);
+  user-select: none;
+  font-size: 10rem;
+  letter-spacing: 0.5rem;
+  position: absolute;
+  top: 123%;
+  left: 80%;
+}
+.techStackDescription h1::first-letter{
+  font-size: 6rem;
+  color:rgba(231, 27, 12, 0.911) ;
+}
+.formContainer{
+  background-color: rgba(161, 151, 151, 0.336);
+  position: relative;
+  padding: 2rem 2rem;
+}
+.formFieldContainer{
+margin: 1rem 20rem;
+}
+.formInput{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.formContainer h1{
+  font-size: 5rem;
+  color: rgba(219, 19, 19, 0.925);
+  position: relative;
+  left: 10%;
+  padding: 2rem 0 0 0;
+}
+.formContainer h2{
+  font-size: 3rem;
+  color: rgb(99, 99, 185);
+  position: relative;
+  left: 10%;
+  padding: 0rem 0 1rem 0;
+}
+.formInput{
+  padding-top: 2rem;
+}
+.formField{
+  height:42px;
+  padding: 0 2rem;
+  font-size:18px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #1f1f1f;
+  font-weight:500;
+  border:none;
+}
+.textArea{
+  height: 200px;
+}
+.submit-icon{
+  margin-left: 1rem;
+}

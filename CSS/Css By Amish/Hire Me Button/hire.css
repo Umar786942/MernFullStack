@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+/* position: absolute;
+top: 50%;
+left: 50%; */
+    background-color:rgb(206, 74, 74);
+    color: white;
+    font-size:medium;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    /* margin: 2rem; */
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    width: 8rem;
+    animation-name:button;
+    animation-duration: 3sec;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: forward;
+    /* animation-fill-mode: forwards; */
+    animation-play-state: paused;
+}
+@keyframes button {
+    0%{
+background-color: black;
+    }
+    100%{
+        
+        background-color: black;
+    }
+}
+.button:hover{
+    animation-play-state:running;
+}

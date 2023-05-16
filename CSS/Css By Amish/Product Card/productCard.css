@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.card{
+    display: flex;
+    background-color: white;
+    width: 60%;
+    height: 60%;
+    border-radius: 2rem;
+}
+.mugimg img{
+  width: 100%;
+  height: 100%;
+border-radius: 2rem 0 0 2rem;
+}
+.name{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: gray;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.content{
+    margin: 2rem auto;
+   
+}
+.content h1{
+    
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    line-height: 1;
+    margin: 0.6em 0 0.7em 0;
+}
+.description{
+    font-family: "Montserrat", sans-serif;
+    /* width: 96%; */
+    font-size: 1rem;
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 1.5em;
+}
+#greentext{
+    color: darkgreen;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+    line-height: 1;
+}
+#normaltext{
+    font-family: "Montserrat", sans-serif;
+    /* width: 96%; */
+    font-size: 1rem;
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 1.5em;
+}
+.button{
+    display: block;
+    margin: 2em 0 1em 0;
+    background-color: darkgreen;
+    width: 100%;
+    padding: 1em 0;
+    color: white;
+    border: 0;
+    border-radius: 0.7em;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    color: white;
+    margin: 2rem;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    /* animation-iteration-count:infinite; */
+    /* animation-timing-function: ease; */
+    animation-timing-function: ease-in;
+    /* animation-timing-function: ease-out; */
+    /* animation-timing-function: linear; */
+    /* animation-delay: 3s; */
+    animation-delay: -2s;
+    position: relative;
+    /* animation-direction:normal; */
+    /* animation-direction: reverse; */
+    /* animation-direction:alternate; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-fill-mode: backwards; */
+    /* animation-fill-mode: forwards; */
+    animation-fill-mode:both;
+    
+}
+@keyframes example {
+/*     from{
+        background-color: aqua;
+        width: 250px;
+    }
+    to{
+background-color:brown;
+width: 400px;
+height: 400px;
+    } */
+    0%{
+background-color: aqua;
+top: 0;
+left: 0;
+    }
+    25%{
+background-color: blue;
+top: 0;
+left: 200px;
+    }
+    50%{
+        background-color: brown;
+        top: 200px;
+        left: 200px;
+
+    }
+    75%{
+background-color: blanchedalmond;
+top: 200px;
+left: 0;
+    }
+    100%{
+background-color: chartreuse;
+top: 0;
+left: 0;
+    }
+}
+.button{
+    background-color: aqua;
+    color: white;
+    font-size:larger;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem;
+    animation-name:button;
+    animation-duration: 5sec;
+    animation-timing-function: ease-in;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 1;
+    animation-direction: forward;
+    /* animation-fill-mode: both; */
+    /* animation-fill-mode: forwards; */
+    animation-play-state: paused;
+}
+@keyframes button {
+    0%{
+background-color: black;
+    }
+    100%{
+        transform: scale(1.5rem);
+        background-color: chartreuse;
+        /* background-color: black; */
+    }
+}
+.button:hover{
+    animation-play-state:running;
+}
