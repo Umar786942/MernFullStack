@@ -1,0 +1,212 @@
+*,::before,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+   
+}
+:root{
+    --colorDark1:#112D4E;
+    --colorDark2:#3F72AF;
+    --colorLight1:#DBE2EF;
+    --colorLight2:#F9F7F7;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: linear-gradient(to top left,var(--colorDark2), var(--colorDark1));
+}
+
+.wrapper{
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+   
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body h1{
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    /* background-image: linear-gradient(to right,var(--colorDark1) 0%,var(--colorDark2) 50%,var(--colorLight2) 100%); */
+   
+    padding:1.5rem 0;
+    z-index: -1;
+   
+   
+}
+.weatherContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    gap: 2rem;
+    /* align-items: center; */
+}
+.weatherContainer .tab{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.tab p{
+    letter-spacing: 0.1rem;
+    opacity: 0.8;
+    cursor: pointer;
+    
+}
+.selectedTab{
+  background-color: rgba(255, 255, 255, 0.51);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+}
+.grantLocationAccess{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    display:flex;
+
+}
+.grantLocationAccess.inactive{
+    display:none
+}
+.grantLocationAccess img{
+    width: 80px;
+    height: 80px;
+}
+.grantLocationAccess p:first-of-type{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.grantLocationAccess p:last-of-type{
+    font-size: 1rem;
+
+}
+.grantLocationAccess .btn{
+    background-color: var(--colorDark2);
+    color: var(--colorLight1);
+    border: none;
+    padding: 0.8rem 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+}
+.grantLocationAccess .btn:hover{
+      background-color: var(--colorLight1);
+      color: var(--colorDark2);
+}
+.loadingContainer{
+    align-self: center;
+    display: none;
+
+}
+.loadingContainer.active{
+    display: block;
+}
+.loadingContainer p{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.weatherinfo{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+.weatherinfo.active{
+    display: flex;
+}
+.weatherinfo [citywithflag]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+
+}
+.windHumidCloudsContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.weatherinfo h2{
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.weatherinfo p:nth-child(2){
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    
+}
+.weatherinfo p:nth-child(4){
+    font-size: 2.5rem;
+    
+}
+.common{
+    background-color: rgba(255, 255, 255, 0.429);
+    width: 30%;
+    text-align: center;
+    line-height: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    
+}
+.searchForm{
+    display: none;
+    gap: 1rem;
+    width: 95%;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+    
+}
+.searchForm.active{
+    display: flex;
+}
+#search{
+    width: 90%;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.463);
+    padding:0.8rem 1rem;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 1.2rem;
+    
+   
+}
+#search:focus{
+    outline: 3px solid rgba(255, 255, 255, 0.781);
+}
+#search::placeholder{
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 1rem;
+}
+.btn{
+  background-color: var(--colorDark2);
+  border-radius: 50%;
+  border: none;
+  padding: 0.5rem;
+}
+.weatherContainer [NotFoundImage]{
+    display: none;
+    object-fit: contain;
+}
+.weatherContainer [NotFoundImage].active{
+    display: block;
+}
+

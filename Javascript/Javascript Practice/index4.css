@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.container{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grandParent{
+    width:600px;
+    height: 600px;
+    background-color: rgb(81, 81, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    
+}
+.parent{
+    width:50%;
+    height: 50%;
+    background-color: rgb(105, 72, 72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-10%,-5%);
+}
+.child{
+    width:50%;
+    height: 50%;
+    background-color: cadetblue;
+    transform: translate(-20%,-5%);
+}

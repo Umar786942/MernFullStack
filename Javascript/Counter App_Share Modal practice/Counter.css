@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(109, 101, 101);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+
+
+}
+.heading{
+    font-size: 1.5rem;
+    color: rgb(22, 20, 20);
+    font-weight: bold;
+}
+.calc{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 1.2rem 1rem 1rem 1rem;
+    font-weight:bolder;
+    font-size: 2rem;
+    color: rgb(66, 61, 61);
+}
+.material-symbols-outlined.md-36{
+    font-size: 36px;
+    font-weight: bold;
+}
+.minus{
+    cursor: pointer;
+}
+.plus{
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+.container{
+min-height: 100vh;
+width: 100vw;
+overflow-x: hidden;
+overflow-y: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.btn{
+   border: 1px solid black;
+   font-weight: bold;
+   font-size: medium;
+   padding: 0.5rem 1rem;
+   border-radius: 1rem;
+}
