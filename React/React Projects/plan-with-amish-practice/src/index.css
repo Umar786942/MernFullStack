@@ -1,0 +1,111 @@
+*,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.App{
+  width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(to top right,rgba(128, 128, 128, 0.453) 0%,rgba(128, 128, 128, 0.744) 50%,rgba(0, 0, 0, 0.686) 75%);
+  display: flex;
+  justify-content: center;
+  
+}
+.container{
+  width: 85%;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.839);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Heading{
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(36, 62, 62);
+  margin: 1rem 0;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.singleCard{
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.552);
+  
+  height: max-content;
+  
+}
+.singleCard img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  height: 15rem
+
+}
+.btn{
+  width: 80%;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.635);
+  color: wheat;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  margin:0 auto
+}
+.btn:hover{
+  background-color: rgba(0, 0, 0, 0.703);
+  color: white;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.577);
+}
+.tourInfo p:nth-of-type(1){
+  color: rgb(54, 194, 149);
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.tourInfo p:nth-of-type(2){
+  /* line-height: 2rem; */
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+.tourDescription{
+  font-family:Arial, Helvetica, sans-serif;
+
+  
+}
+.moreLess{
+  color: rgb(10, 142, 237);
+  cursor: pointer;
+}
+.refreshDiv{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.refreshDiv button{
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0.8rem;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+.refreshDiv button:hover{
+  background-color: grey;
+  color: white;
+}
